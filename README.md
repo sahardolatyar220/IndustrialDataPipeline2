@@ -108,17 +108,32 @@ XGBoost achieved:
 Use RandomForest for critical industrial equipment where false negatives must be avoided.
 
 ---
+..
+🎯 Future Work:
+✔ Deploy real-time monitoring dashboard  
+✔ Handle class imbalance with SMOTE  
+✔ Add LSTM Time-Series modeling  
+
+---
+
+## 🚀 How to Run
+
+```bash
+git clone https://github.com/sahardolatyar220/IndustrialDataPipeline2.git
+cd IndustrialDataPipeline2
+conda create -n idp python=3.10 -y
+conda activate idp
+pip install -r requirements.txt
+jupyter notebook
+
+
 
 ## 👩‍🔬 Author
 Sahar Dolatyar  
 Predictive Maintenance & Machine Learning Engineer  
 
 
----
-🎯 Future Work:
-✔ Deploy real-time monitoring dashboard  
-✔ Handle class imbalance with SMOTE  
-✔ Add LSTM Time-Series modeling
+
 
 
 
