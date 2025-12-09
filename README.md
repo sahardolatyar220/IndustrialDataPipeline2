@@ -44,19 +44,34 @@ XGBoost:
 
 
 📈 ROC Curve
-### ROC Curve Comparison
 
 ![](results/roc_curve_comparison.png)
 
 🔍 SHAP Explainability
-### SHAP Summary (RandomForest)
-![](results/shap_summary_rf.png)
 
-### SHAP Bar Plot (RandomForest)
-![](results/shap_bar_rf.png)
+### RandomForest SHAP
 
-### SHAP Summary (XGBoost)
-![](results/shap_summary_xgb.png)
+#### Summary Plot
+![SHAP Summary RF](results/shap_summary_rf.png)
+
+#### Bar Plot
+![SHAP Bar RF](results/shap_bar_rf.png)
+
+#### Dependence Plot (temp_diff)
+![SHAP Dependence RF](results/shap_dependence_rf.png)
+
+
+### XGBoost SHAP
+
+#### Summary Plot
+![SHAP Summary XGB](results/shap_summary_xgb.png)
+
+#### Bar Plot
+![SHAP Bar XGB](results/shap_bar_xgb.png)
+
+#### Dependence Plot (temp_diff)
+![SHAP Dependence XGB](results/shap_dependence_xgb.png)
+
 
 ## 🚀 Future Work
 - Deploy model as Web Service (API)
