@@ -35,9 +35,35 @@ IndustrialDataPipeline2/
 | F1-score    | 0.89        | 0.83    |
 | ROC-AUC     | 1.00        | 1.00    |
 
----
+📊 Confusion Matrix
+RandomForest:
+![](results/confusion_matrix_RandomForest.png)
 
-More details coming soon... 
+XGBoost:
+![](results/confusion_matrix_XGBoost.png)
 
-Commit message:
-Add README documentation - part1
+
+📈 ROC Curve
+### ROC Curve Comparison
+
+![](results/roc_curve_comparison.png)
+
+🔍 SHAP Explainability
+### SHAP Summary (RandomForest)
+![](results/shap_summary_rf.png)
+
+### SHAP Bar Plot (RandomForest)
+![](results/shap_bar_rf.png)
+
+### SHAP Summary (XGBoost)
+![](results/shap_summary_xgb.png)
+
+## 🚀 Future Work
+- Deploy model as Web Service (API)
+- Real production sensor data ingestion
+- Live monitoring dashboard
+
+📌 Contributor: Sahar Dolatyar  
+
+
+
