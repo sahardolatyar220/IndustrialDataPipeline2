@@ -1,13 +1,14 @@
  🏭 Industrial Data Pipeline — Predictive Maintenance
 
-A full Machine Learning pipeline for industrial sensor data to predict machine failures.
+A complete Machine Learning pipeline for industrial sensor data to predict equipment failures using RandomForest and XGBoost, including:
 
-### ✔ Includes:
-- Synthetic Data Generation
-- Data Cleaning & Feature Engineering
-- RandomForest & XGBoost Models
-- Evaluation: Confusion Matrix + ROC Curve
-- Model Explainability with SHAP
+✔ Synthetic Data Generation  
+✔ Preprocessing & Feature Engineering  
+✔ Binary Classification Model Training  
+✔ Model Performance Comparison  
+✔ SHAP Explainability  
+✔ Complete GitHub Version Control
+
 
 ## 📂 Project Structure
 IndustrialDataPipeline2/
@@ -26,6 +27,10 @@ IndustrialDataPipeline2/
 ├── results/              # evaluation plots exported here
 └── .gitignore            # ignore unnecessary files
 
+
+📌 Raw & processed data → ignored in Git using .gitignore  
+📌 Notebook includes step-by-step ML pipeline
+
 ### 📊 Model Performance Summary
 
 | Metric       | RandomForest | XGBoost |
@@ -35,50 +40,80 @@ IndustrialDataPipeline2/
 | F1-score    | 0.89        | 0.83    |
 | ROC-AUC     | 1.00        | 1.00    |
 
-📊 Confusion Matrix
-RandomForest:
-![](results/confusion_matrix_RandomForest.png)
 
-XGBoost:
-![](results/confusion_matrix_XGBoost.png)
+## Visual Evaluation
+
+### 🔹 Confusion Matrix
+
+RandomForest | XGBoost
+------------ | -------------
+![](results/confusion_matrix_rf.png) | ![](results/confusion_matrix_xgb.png)
 
 
-📈 ROC Curve
+### 🔹 ROC Curve Comparison
 
 ![](results/roc_curve_comparison.png)
 
-🔍 SHAP Explainability
+---
 
-### RandomForest SHAP
+##  SHAP Model Explainability
 
-#### Summary Plot
-![SHAP Summary RF](results/shap_summary_rf.png)
+### RandomForest
 
-#### Bar Plot
-![SHAP Bar RF](results/shap_bar_rf.png)
+| Plot | Visualization |
+|------|---------------|
+| Summary Plot | ![](results/shap_summary_rf.png) |
+| Bar Plot | ![](results/shap_bar_rf.png) |
+| Dependence Plot | ![](results/shap_dependence_rf.png) |
 
-#### Dependence Plot (temp_diff)
-![SHAP Dependence RF](results/shap_dependence_rf.png)
+---
+
+### XGBoost
+
+| Plot | Visualization |
+|------|---------------|
+| Summary Plot | ![](results/shap_summary_xgb.png) |
+| Bar Plot | ![](results/shap_bar_xgb.png) |
+| Dependence Plot | ![](results/shap_dependence_xgb.png) |
+
+---
+
+## Tech Stack
+- Python (NumPy, Pandas)
+- Scikit-learn
+- XGBoost
+- SHAP
+- Matplotlib / Seaborn
+- Git & GitHub
+
+---
+
+## Conclusion
+
+RandomForest achieved:
+- Better Precision & F1-score → safer decisions
+- Clearer explainability with SHAP
+
+XGBoost achieved:
+- Higher Recall → detects all failures
+- Slightly more false alarms
+
+👉 Final recommendation:  
+Use RandomForest for critical industrial equipment where false negatives must be avoided.
+
+---
+
+## 👩‍🔬 Author
+Sahar Dolatyar  
+Predictive Maintenance & Machine Learning Engineer  
 
 
-### XGBoost SHAP
+---
+🎯 Future Work:
+✔ Deploy real-time monitoring dashboard  
+✔ Handle class imbalance with SMOTE  
+✔ Add LSTM Time-Series modeling
 
-#### Summary Plot
-![SHAP Summary XGB](results/shap_summary_xgb.png)
-
-#### Bar Plot
-![SHAP Bar XGB](results/shap_bar_xgb.png)
-
-#### Dependence Plot (temp_diff)
-![SHAP Dependence XGB](results/shap_dependence_xgb.png)
-
-
-## 🚀 Future Work
-- Deploy model as Web Service (API)
-- Real production sensor data ingestion
-- Live monitoring dashboard
-
-📌 Contributor: Sahar Dolatyar  
 
 
 
