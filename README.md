@@ -49,9 +49,9 @@ IndustrialDataPipeline2/
 
 ### 🔹 Confusion Matrix
 
-RandomForest | XGBoost
-
-![](results/confusion_matrix_rf.png) | ![](results/confusion_matrix_xgb.png)
+| RandomForest | XGBoost |
+|-------------|---------|
+| <img src="results/confusion_matrix_rf.png" width="350"/> | <img src="results/confusion_matrix_xgb.png" width="350"/> |
 
 
 ### 🔹 ROC Curve Comparison
