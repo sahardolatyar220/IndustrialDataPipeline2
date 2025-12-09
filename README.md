@@ -50,7 +50,7 @@ IndustrialDataPipeline2/
 ### 🔹 Confusion Matrix
 
 RandomForest | XGBoost
------------- | -------------
+
 ![](results/confusion_matrix_rf.png) | ![](results/confusion_matrix_xgb.png)
 
 
